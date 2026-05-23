@@ -63,15 +63,15 @@
             </div>
             <div class="mb-2">
                 <select name="media_type" class="form-select">
-                    <option value="Book">📚 Книга</option>
-                    <option value="Anime">🎬 Аніме</option>
-                    <option value="Music">🎵 Музика</option>
+                    <option value="Book">Книга</option>
+                    <option value="Anime">Аніме</option>
+                    <option value="Music">Музика</option>
                 </select>
             </div>
             <div class="mb-3">
                 <input type="number" name="rating" class="form-control" placeholder="Оцінка користувача (1-10)" min="1" max="10" required>
             </div>
-            <button type="submit" class="btn btn-purple w-100 fw-bold py-2 shadow-sm">Зберегти в Azure SQL</button>
+            <button type="submit" class="btn btn-purple w-100 fw-bold py-2 shadow-sm">Зберегти</button>
         </form>
     </div>
 
@@ -83,13 +83,13 @@
                 <div>
                     <h6 class="fw-bold m-0 text-dark">{{ item[1] }}</h6>
                     <span class="badge badge-purple mt-2">
-                        {% if item[3] == 'Book' %}📚 Книга
-                        {% elif item[3] == 'Anime' %}🎬 Аніме
-                        {% else %}🎵 Музика{% endif %}
+                        {% if item[3] == 'Book' %} Книга
+                        {% elif item[3] == 'Anime' %} Аніме
+                        {% else %} Музика{% endif %}
                     </span>
                 </div>
                 <div class="text-end">
-                    <span class="badge bg-warning text-dark px-2 py-1.5 fw-bold" style="font-size: 0.9rem;">⭐ {{ item[5] }}/10</span>
+                    <span class="badge bg-warning text-dark px-2 py-1.5 fw-bold" style="font-size: 0.9rem;"> {{ item[5] }}/10</span>
                 </div>
             </div>
         </div>
