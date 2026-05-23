@@ -12,7 +12,7 @@ AZURE_CONN_STRING = (
     "Uid=azureuser;"
     "Pwd=~XEa>!4Fk~9&>J+;"
     "Encrypt=yes;"
-    "TrustServerCertificate=yes;" 
+"TrustServerCertificate=yes;"
     "Connection Timeout=30;"
 )
 
